@@ -90,7 +90,7 @@ const App: React.FC = () => {
             callback={checkAnswer}
           />
         )}
-        {!gameOver && !loading && userAnswers.length === number + 1 && number !== TOTAL_QUESTIONS - 1 ? (
+        {!gameOver && !loading &&  userAnswers.length === number + 1 && number !== TOTAL_QUESTIONS - 1 ? (
           <button className='next' onClick={nextQuestion}>
             Next Question
           </button>
